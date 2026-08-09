@@ -11,7 +11,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card" style="max-width:480px; margin:0 auto;">
-        <h2>🔑 Change Password</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"></circle><line x1="10.5" y1="12.5" x2="20" y2="3"></line><line x1="16" y1="7" x2="19" y2="10"></line><line x1="13" y1="10" x2="16" y2="13"></line></svg> Change Password</h2>
 
         <% if (request.getAttribute("error") != null) { %>
             <div class="alert alert-error"><%= request.getAttribute("error") %></div>

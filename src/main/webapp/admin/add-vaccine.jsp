@@ -11,7 +11,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card">
-        <h2>➕ Add Vaccine</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Add Vaccine</h2>
 
         <% if (request.getAttribute("error") != null) { %>
             <div class="alert alert-error"><%= request.getAttribute("error") %></div>

@@ -11,7 +11,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card" style="max-width:520px; margin:0 auto;">
-        <h2>👶 Add Child Record</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"></circle><path d="M2 21c0-4 3-6 7-6s7 2 7 6"></path><line x1="18" y1="6" x2="18" y2="12"></line><line x1="15" y1="9" x2="21" y2="9"></line></svg> Add Child Record</h2>
 
         <% if (request.getAttribute("error") != null) { %>
             <div class="alert alert-error"><%= request.getAttribute("error") %></div>

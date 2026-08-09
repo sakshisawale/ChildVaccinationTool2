@@ -12,7 +12,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card">
-        <h2>👨‍👩‍👧 My Children</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg> My Children</h2>
 
         <% if (request.getAttribute("error") != null) { %>
             <div class="alert alert-error"><%= request.getAttribute("error") %></div>

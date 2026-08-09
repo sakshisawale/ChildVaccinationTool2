@@ -18,22 +18,43 @@
 
     <div class="grid">
         <div class="stat-box">
+            <div class="icon-wrap">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+            </div>
             <div class="number">${childCount}</div>
             <div class="label">Children Added</div>
         </div>
         <div class="stat-box">
+            <div class="icon-wrap">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="16" y1="2" x2="16" y2="6"></line></svg>
+            </div>
             <div class="number">${upcomingCount}</div>
             <div class="label">Vaccines Pending</div>
         </div>
     </div>
 
     <div class="card" style="margin-top:24px;">
-        <h2>Quick Actions</h2>
+        <h2>
+            <svg class="icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            Quick Actions
+        </h2>
         <div style="display:flex; gap:14px; flex-wrap:wrap;">
-            <a class="btn" href="${pageContext.request.contextPath}/user/add-child">+ Add Child</a>
-            <a class="btn" href="${pageContext.request.contextPath}/user/view-children">View My Children</a>
-            <a class="btn" href="${pageContext.request.contextPath}/user/upcoming-vaccines">Upcoming Vaccines</a>
-            <a class="btn" href="${pageContext.request.contextPath}/user/add-vaccine-log">+ Add Vaccine Log</a>
+            <a class="btn" href="${pageContext.request.contextPath}/user/add-child">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"></circle><path d="M2 21c0-4 3-6 7-6s7 2 7 6"></path><line x1="18" y1="6" x2="18" y2="12"></line><line x1="15" y1="9" x2="21" y2="9"></line></svg>
+                Add Child
+            </a>
+            <a class="btn btn-outline" href="${pageContext.request.contextPath}/user/view-children">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+                View My Children
+            </a>
+            <a class="btn btn-outline" href="${pageContext.request.contextPath}/user/upcoming-vaccines">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="16" y1="2" x2="16" y2="6"></line></svg>
+                Upcoming Vaccines
+            </a>
+            <a class="btn btn-accent" href="${pageContext.request.contextPath}/user/add-vaccine-log">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"></rect><rect x="9" y="1.5" width="6" height="3" rx="1"></rect><line x1="9" y1="10" x2="15" y2="10"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+                Add Vaccine Log
+            </a>
         </div>
     </div>
 </div>

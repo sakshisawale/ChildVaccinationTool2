@@ -12,7 +12,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card">
-        <h2>💉 All Vaccines</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> All Vaccines</h2>
 
         <% if (sessionScope.error != null) { %>
             <div class="alert alert-error"><%= sessionScope.error %></div>
@@ -46,7 +46,10 @@
                     <td>
                         <a class="btn btn-sm btn-danger"
                            href="${pageContext.request.contextPath}/admin/delete-vaccine?id=${v.vaccineId}"
-                           onclick="return confirm('Delete this vaccine? This cannot be undone.');">Delete</a>
+                           onclick="return confirm('Delete this vaccine? This cannot be undone.');">
+                            <svg class="icon" viewBox="0 0 24 24" style="width:14px;height:14px;"><polyline points="3 6 5 6 21 6"></polyline><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path></svg>
+                            Delete
+                        </a>
                     </td>
                 </tr>
             </c:forEach>

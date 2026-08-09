@@ -12,7 +12,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card">
-        <h2>💰 Update Vaccine Price</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg> Update Vaccine Price</h2>
 
         <% if (sessionScope.success != null) { %>
             <div class="alert alert-success"><%= sessionScope.success %></div>

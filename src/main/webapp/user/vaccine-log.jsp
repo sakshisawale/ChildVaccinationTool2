@@ -12,7 +12,7 @@
 <%@ include file="_navbar.jspf" %>
 <div class="container">
     <div class="card">
-        <h2>📋 Vaccine Log (History)</h2>
+        <h2><svg class="icon" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"></rect><rect x="9" y="1.5" width="6" height="3" rx="1"></rect><line x1="9" y1="10" x2="15" y2="10"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg> Vaccine Log (History)</h2>
 
         <% if (request.getAttribute("error") != null) { %>
             <div class="alert alert-error"><%= request.getAttribute("error") %></div>
