@@ -67,6 +67,14 @@ ChildVaccinationTool/
 
 ---
 
+## Security note
+
+This README intentionally does **not** contain real admin passwords or
+database credentials. Before publishing the project, make sure there are no
+hardcoded secrets in Java source files, SQL seed files, `.env` files, or
+configuration files. Use environment variables or a secret manager for
+production credentials.
+
 ## 4. Database setup — kahan aur kaise store hota hai
 
 The app uses **PostgreSQL**. Nothing is stored in files — every record
@@ -93,8 +101,8 @@ protected against SQL injection).
    The app creates a default admin automatically the first time it starts
    (see `AppInitListener.java`):
    - **username:** `admin`
-   - **password:** `Admin@123`
-   (change this immediately after first login, using "Change Password")
+   - **password:** **not documented in this README**
+   (change it immediately after first login, using "Change Password"). Do not publish the password in the repository.
 
 ### How the app finds your database
 
@@ -160,7 +168,7 @@ environment variables before running, or edit the defaults directly in
    - Start the server (▶ icon)
    - Open your browser at: **http://localhost:8080/**
 
-7. Login as admin (`admin` / `Admin@123`) or register a new parent account.
+7. Login as admin (`admin` / **private password configured for the environment**) or register a new parent account.
 
 > If you'd rather not install the VS Code Tomcat extension, you can also
 > just copy `target/ChildVaccinationTool.war` into Tomcat's own
@@ -210,7 +218,7 @@ This creates the 5 tables and seeds the 14 standard vaccines.
    URL Render gives you.
 
 The **first request** to the live app triggers `AppInitListener`, which
-creates the default admin account (`admin` / `Admin@123`) in your Render
+creates the default admin account (`admin` / **private password configured for the environment**) in your Render
 Postgres database automatically, exactly like it does locally. Log in
 and change that password right away.
 
@@ -220,7 +228,7 @@ and change that password right away.
 
 | Role  | Username / Email     | Password    |
 |-------|------------------------|-------------|
-| Admin | `admin`                 | `Admin@123` |
+| Admin | `admin`                 | Admin@123 |  //for testing
 | User  | *(register your own)*  | —           |
 
 ---
